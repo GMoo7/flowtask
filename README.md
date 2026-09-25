@@ -2,7 +2,7 @@
 
 > **Concept project.** FlowTask is a fictional business created for a web design portfolio. All names, people, reviews, figures and prices are samples. No real orders, payments or messages are processed.
 
-**[View the live demo →](https://gmoo7.github.io/flowtask/)**
+**[View the live demo →](https://mustufashaikh.github.io/flowtask/)**
 
 A marketing website and a working application interface for a fictional project-management product.
 
@@ -16,7 +16,7 @@ A marketing website and a working application interface for a fictional project-
 - **Dashboard**: overview, projects in grid or list view, kanban boards with drag and drop, task create/edit/delete, task filters, team workload and invites, analytics charts, notifications, global search, light and dark themes
 - All changes are saved in the browser; Settings → Reset demo data restores the samples
 
-Jump straight into the app: [gmoo7.github.io/flowtask/#/app](https://gmoo7.github.io/flowtask/#/app)
+Jump straight into the app: [mustufashaikh.github.io/flowtask/#/app](https://mustufashaikh.github.io/flowtask/#/app)
 
 ## Screenshots
 
@@ -44,4 +44,4 @@ Tested in Chromium at 360px, 390px and 1440px widths: no horizontal scrolling, n
 
 ---
 
-Designed and built by [Mustufa Shaikh](https://github.com/GMoo7). Available for website projects for small and growing businesses.
+Designed and built by [Mustufa Shaikh](https://github.com/mustufashaikh). Available for website projects for small and growing businesses.
