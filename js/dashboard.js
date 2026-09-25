@@ -57,6 +57,7 @@ export const AppShell={components:{Logo,SIcon,Av,TaskModal},setup(){
   <div class="side-top"><Logo/></div>
   <nav aria-label="App"><a v-for="[p,l,i] in NAV" :key="p" :href="'#'+p" :class="{on:active(p)}" :aria-current="active(p)?'page':null"><SIcon :n="i"/>{{l}}</a></nav>
   <div class="side-proj"><h4>Projects</h4><a v-for="p in store.projects" :key="p.id" :href="'#/app/projects/'+p.id" :class="{on:route.path==='/app/projects/'+p.id}"><i :style="{background:p.color}"></i>{{p.name}}</a></div>
+  <div class="side-demo"><b>Demo workspace</b><span>Sample data, saved only in this browser.</span></div>
   <div class="side-plan"><b>Pro trial</b><span>9 days left</span><div class="bar"><span style="width:36%"></span></div><a href="#/pricing">Upgrade plan</a></div>
  </aside>
  <div v-if="side" class="side-scrim" @click="side=false"></div>

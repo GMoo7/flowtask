@@ -2,6 +2,7 @@ import {nav,route} from './router.js';
 const {ref,computed,reactive}=Vue;
 export const Logo={props:['light'],template:`<a href="#/" class="logo" :class="{light}"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="var(--lagoon)"/><path d="M9 11h8M9 16h14M9 21h10" stroke="#CFEDE3" stroke-width="3" stroke-linecap="round"/><circle cx="23" cy="11" r="2.5" fill="var(--tangerine)"/></svg><span>FlowTask</span></a>`};
 export const SiteHeader={components:{Logo},setup(){const open=ref(false);return {open,route}},template:`
+<div class="demo-bar"><span><b>Concept product.</b> <span class="long">FlowTask is fictional — pricing, customers and data are samples.</span><span class="short">Fictional, sample data.</span></span><a href="https://github.com/GMoo7/flowtask">View source</a></div>
 <header class="m-head"><div class="wrap">
  <Logo/>
  <button class="m-burger" @click="open=!open" :aria-expanded="open" aria-label="Menu"><span></span><span></span></button>
@@ -13,9 +14,9 @@ export const SiteFooter={components:{Logo},template:`
 <footer class="m-foot"><div class="wrap">
  <div><Logo light/><p>Project management for teams who’d rather be shipping. A fictional product built as a portfolio demo.</p></div>
  <div><h4>Product</h4><a href="#/features">Features</a><a href="#/pricing">Pricing</a><a href="#/app">Live demo</a></div>
- <div><h4>Company</h4><a>About</a><a>Careers</a><a>Contact</a></div>
- <div><h4>Resources</h4><a>Help centre</a><a>Templates</a><a>API docs</a></div>
-</div><div class="wrap base">© {{new Date().getFullYear()}} FlowTask — demo product, not a real service. Designed & built by Hashir.</div></footer>`};
+ <div><h4>Try it</h4><a href="#/signup">Sign up</a><a href="#/login">Log in</a><a href="#/app/projects/p1">Example board</a></div>
+ <div><h4>About this demo</h4><a href="https://github.com/GMoo7/flowtask">Source code</a><a href="https://github.com/GMoo7">Built by Hashir</a><a href="#/faq">FAQ</a></div>
+</div><div class="wrap base">© {{new Date().getFullYear()}} FlowTask — demo product, not a real service. Designed &amp; built by Hashir.</div></footer>`};
 
 // Hero: a small live board visitors can drag cards around on
 const HeroBoard={setup(){
@@ -35,7 +36,7 @@ const HeroBoard={setup(){
    <transition-group name="card" tag="div" class="hb-list">
     <div v-for="(c,i) in col.cards" :key="c.t" class="hb-card" draggable="true" @dragstart="start(ci,i,$event)" :class="{dragging:drag&&drag.ci===ci&&drag.i===i}">
      <span class="tag" :style="{'--t':c.c}">{{c.tag}}</span><p>{{c.t}}</p>
-     <div class="hb-foot"><span v-if="c.av" class="av xs">{{c.av}}</span><button class="hb-move" @click="next(ci,i)" :aria-label="'Move '+c.t+' to next column'">Move</button></div>
+     <div class="hb-foot"><span v-if="c.av" class="av xs">{{c.av}}</span><button type="button" class="hb-move" @click="next(ci,i)" :aria-label="'Move '+c.t+' to next column'">Move</button></div>
     </div></transition-group>
   </div></div></div>`};
 
@@ -78,7 +79,7 @@ export const Home={components:{SiteHeader,SiteFooter,HeroBoard,PricingCards,Icon
   <div class="actions"><a href="#/signup" class="btn">Start free</a><a href="#/app" class="btn ghost">Open the live demo</a></div>
   <p class="muted small">Free for up to 5 people. No credit card needed.</p></div>
  <HeroBoard/></div>
- <div class="wrap logos"><span>Teams at</span><b>Northwind</b><b>Halcyon</b><b>Parcel&amp;Co</b><b>Tidewater</b><b>Brightline</b></div>
+ <div class="wrap logos"><span>Example customers</span><b>Northwind</b><b>Halcyon</b><b>Parcel&amp;Co</b><b>Tidewater</b><b>Brightline</b></div>
 </section>
 <section id="features" class="m-sec"><div class="wrap">
  <h2 class="m-h2">Everything your team needs to ship on time</h2>
@@ -89,7 +90,7 @@ export const Home={components:{SiteHeader,SiteFooter,HeroBoard,PricingCards,Icon
  <ol class="how"><li><h3>Create a project</h3><p>Start blank or pick a template for launches, sprints or client work.</p></li><li><h3>Invite your team</h3><p>Add people by email and choose what each person can see and edit.</p></li><li><h3>Track progress</h3><p>Move tasks across the board and watch the dashboard update live.</p></li></ol>
 </div></section>
 <section id="pricing" class="m-sec"><div class="wrap"><h2 class="m-h2">Simple pricing that grows with you</h2><PricingCards/></div></section>
-<section class="m-sec tint"><div class="wrap"><h2 class="m-h2">Teams that switched</h2>
+<section class="m-sec tint"><div class="wrap"><h2 class="m-h2">Teams that switched</h2><p class="muted" style="margin:-32px 0 32px">Sample testimonials written for this concept.</p>
  <div class="quotes">
   <figure class="big"><blockquote>“We cut our weekly status meeting entirely. Everyone just checks the dashboard.”</blockquote><figcaption><span class="av" style="background:#7A5AF8">RC</span><b>Rosa Chen</b>Head of Product, Halcyon</figcaption></figure>
   <figure><blockquote>“Onboarding took one afternoon. The board just made sense to everyone.”</blockquote><figcaption><span class="av" style="background:#2F7D5B">DK</span><b>David Kim</b>Engineering Manager, Parcel&amp;Co</figcaption></figure>
