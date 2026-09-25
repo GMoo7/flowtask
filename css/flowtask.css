@@ -227,3 +227,4 @@ p{margin:0 0 1em}
 .hb-move{padding:5px 10px;min-height:28px}
 @media (pointer:coarse){.trow{padding:12px 4px}.trow input{width:22px;height:22px}}
 .short{display:none}@media (max-width:600px){.long{display:none}.short{display:inline}.demo-bar{flex-wrap:nowrap;justify-content:space-between;text-align:left;font-size:.8rem}}
+.deep-link .prerendered{visibility:hidden}.nojs{max-width:640px;margin:24px auto;padding:16px;border-left:4px solid var(--tangerine);background:#fff}
