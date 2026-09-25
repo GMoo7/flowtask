@@ -1,31 +1,47 @@
-# FlowTask — SaaS landing page + project dashboard (demo)
+# FlowTask — SaaS landing page and dashboard
 
-A fictional project-management product built as a portfolio piece. It pairs a marketing website with a working application interface.
+> **Concept project.** FlowTask is a fictional business created for a web design portfolio. All names, people, reviews, figures and prices are samples. No real orders, payments or messages are processed.
 
-**Live demo:** https://gmoo7.github.io/flowtask/ — or jump straight into the app: https://gmoo7.github.io/flowtask/#/app
+**[View the live demo →](https://gmoo7.github.io/flowtask/)**
 
-## Public website
-- **Home** — hero with a live, draggable mini board; features; how it works; pricing with monthly/yearly toggle; testimonials; FAQ; CTA
-- **Pricing** — Free, Pro ($12/user/mo) and Business ($29/user/mo) tiers plus a feature comparison table *(demo pricing)*
-- **Log in / Sign up** — validated authentication-style screens (demo credentials pre-filled)
+A marketing website and a working application interface for a fictional project-management product.
 
-## Dashboard
-- **Overview** — greeting, KPI tiles, your tasks, weekly completion chart, project progress
-- **Projects** — grid/list views, create a project
-- **Project board** — kanban with drag-and-drop between columns, assignee filter, keyboard-friendly "move" menu, add/edit/delete tasks
-- **My tasks** — search, filter by assignee/status/priority, sort, tick tasks off
-- **Team** — members, status, workload bars, invite by email
-- **Analytics** — created vs completed line chart, status donut, per-person bar chart, date-range switch
-- **Notifications** — unread badge, popover, mark all as read
-- **Settings** — profile, light/dark theme, notification switches, reset demo data
-- **Global search** — finds projects and tasks from the top bar
+![FlowTask home page](docs/desktop-home.png)
 
-All data is sample data saved to `localStorage`, so changes survive a refresh. Settings → **Reset demo data** restores it.
+## Features
 
-## Stack
-- **Vue 3** (vendored in `/vendor`, no CDN or build step)
-- Small hash router (`js/router.js`) and a reactive store with persistence (`js/store.js`)
-- Hand-written SVG chart components (`js/charts.js`) — no chart library
-- One CSS file with light and dark themes
+- **Marketing site**: hero with a draggable mini board, features, how it works, pricing with a monthly/yearly toggle, testimonials, FAQ
+- **Pricing page**: Free, Pro and Business tiers with a comparison table (sample pricing)
+- **Log in and sign up** screens with validation
+- **Dashboard**: overview, projects in grid or list view, kanban boards with drag and drop, task create/edit/delete, task filters, team workload and invites, analytics charts, notifications, global search, light and dark themes
+- All changes are saved in the browser; Settings → Reset demo data restores the samples
 
-_FlowTask, its customers and pricing are fictional._
+Jump straight into the app: [gmoo7.github.io/flowtask/#/app](https://gmoo7.github.io/flowtask/#/app)
+
+## Screenshots
+
+| ![Home](docs/desktop-home.png) | ![Dashboard overview](docs/desktop-overview.png) |
+|:--:|:--:|
+| Home | Dashboard overview |
+| ![Project board](docs/desktop-board.png) | ![Analytics](docs/desktop-analytics.png) |
+| Project board | Analytics |
+
+### Mobile
+
+<p><img src="docs/mobile-home.png" width="260" alt="Home on mobile"> &nbsp; <img src="docs/mobile-overview.png" width="260" alt="Dashboard overview on mobile"></p>
+
+## Built with
+
+Vue 3 (vendored, no CDN or build step), a small hash router, a reactive store with localStorage persistence, and hand-written SVG chart components. Fonts are self-hosted.
+
+## Run it locally
+
+Serve the folder with any static server, for example `npx serve .`
+
+## Quality checks
+
+Tested in Chromium at 360px, 390px and 1440px widths: no horizontal scrolling, no broken links, no JavaScript errors, and every button and form tested end to end.
+
+---
+
+Designed and built by [Hashir](https://github.com/GMoo7). Available for website projects for small and growing businesses.
