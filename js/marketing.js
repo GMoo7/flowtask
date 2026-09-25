@@ -15,8 +15,8 @@ export const SiteFooter={components:{Logo},template:`
  <div><Logo light/><p>Project management for teams who’d rather be shipping. A fictional product built as a portfolio demo.</p></div>
  <div><h4>Product</h4><a href="#/features">Features</a><a href="#/pricing">Pricing</a><a href="#/app">Live demo</a></div>
  <div><h4>Try it</h4><a href="#/signup">Sign up</a><a href="#/login">Log in</a><a href="#/app/projects/p1">Example board</a></div>
- <div><h4>About this demo</h4><a href="https://github.com/GMoo7/flowtask">Source code</a><a href="https://github.com/GMoo7">Built by Hashir</a><a href="#/faq">FAQ</a></div>
-</div><div class="wrap base">© {{new Date().getFullYear()}} FlowTask — demo product, not a real service. Designed &amp; built by Hashir.</div></footer>`};
+ <div><h4>About this demo</h4><a href="https://github.com/GMoo7/flowtask">Source code</a><a href="https://github.com/GMoo7">Built by Mustufa Shaikh</a><a href="#/faq">FAQ</a></div>
+</div><div class="wrap base">© {{new Date().getFullYear()}} FlowTask — demo product, not a real service. Designed &amp; built by Mustufa Shaikh.</div></footer>`};
 
 // Hero: a small live board visitors can drag cards around on
 const HeroBoard={setup(){
