@@ -2,7 +2,7 @@ import {nav,route} from './router.js';
 const {ref,computed,reactive}=Vue;
 export const Logo={props:['light'],template:`<a href="#/" class="logo" :class="{light}"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="var(--lagoon)"/><path d="M9 11h8M9 16h14M9 21h10" stroke="#CFEDE3" stroke-width="3" stroke-linecap="round"/><circle cx="23" cy="11" r="2.5" fill="var(--tangerine)"/></svg><span>FlowTask</span></a>`};
 export const SiteHeader={components:{Logo},setup(){const open=ref(false);return {open,route}},template:`
-<div class="demo-bar"><span><b>Concept product.</b> <span class="long">FlowTask is fictional — pricing, customers and data are samples.</span><span class="short">Fictional, sample data.</span></span><a href="https://github.com/mustufashaikh/flowtask">View source</a></div>
+<div class="demo-bar"><span><b>Concept product.</b> <span class="long">FlowTask is fictional — pricing, customers and data are samples.</span><span class="short">Fictional, sample data.</span></span><a href="https://github.com/GMoo7/flowtask">View source</a></div>
 <header class="m-head"><div class="wrap">
  <Logo/>
  <button class="m-burger" @click="open=!open" :aria-expanded="open" aria-label="Menu"><span></span><span></span></button>
@@ -15,7 +15,7 @@ export const SiteFooter={components:{Logo},template:`
  <div><Logo light/><p>Project management for teams who’d rather be shipping. A fictional product built as a portfolio demo.</p></div>
  <div><h4>Product</h4><a href="#/features">Features</a><a href="#/pricing">Pricing</a><a href="#/app">Live demo</a></div>
  <div><h4>Try it</h4><a href="#/signup">Sign up</a><a href="#/login">Log in</a><a href="#/app/projects/p1">Example board</a></div>
- <div><h4>About this demo</h4><a href="https://github.com/mustufashaikh/flowtask">Source code</a><a href="https://github.com/mustufashaikh">Built by Mustufa Shaikh</a><a href="#/faq">FAQ</a></div>
+ <div><h4>About this demo</h4><a href="https://github.com/GMoo7/flowtask">Source code</a><a href="https://github.com/GMoo7">Built by Mustufa Shaikh</a><a href="#/faq">FAQ</a></div>
 </div><div class="wrap base">© {{new Date().getFullYear()}} FlowTask — demo product, not a real service. Designed &amp; built by Mustufa Shaikh.</div></footer>`};
 
 // Hero: a small live board visitors can drag cards around on
